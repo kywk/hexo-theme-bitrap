@@ -30,6 +30,13 @@ var disqus_shortname = '<%= config.disqus_shortname %>';
 </script>
 <% } %>
 
+<% if (theme.tag_flickr){ %>
+<link rel="stylesheet" href="<%- config.root %>jResFlickr/jresflickr.css" type="text/css" media="screen" />
+<script type="text/javascript" src="<%- config.root %>jResFlickr/jresflickr.js"></script>
+<script>
+$('.jresflickr').jResFlick();
+</script>
+<% } %>
 
 
 <% if (theme.fancybox){ %>

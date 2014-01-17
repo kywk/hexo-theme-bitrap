@@ -27,3 +27,6 @@ fancybox: true
 
 google_analytics:
 rss:
+
+## hexi only
+tag_flickr: true

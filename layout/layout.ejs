@@ -1,10 +1,15 @@
 <%- partial('_partial/head') %>
 
 <body>
-  <header id="header"><%- partial('_partial/header') %></header>
-  <div id="content"><%- body %></div>
-  <div class="clearfix"></div>
-  <footer id="footer" class="inner"><%- partial('_partial/footer') %></footer>
+  <header id="header">
+    <%- partial('_partial/header') %>
+  </header>
+  <div id="main">
+    <%- body %>
+  </div>
+  <footer id="footer">
+    <%- partial('_partial/footer') %>
+  </footer>
   <%- partial('_partial/after_footer') %>
 </body>
 </html>

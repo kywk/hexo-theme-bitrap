@@ -72,6 +72,7 @@ a:hover .label, a:active .label {
 .article-title{
   margin: -5px 0 15px 0;
   font-weight:300;
+  white-space: nowrap;
 }
 .article-entry {
   text-align:justify;
