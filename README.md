@@ -1,87 +1,69 @@
-# bitrap
+# This theme was deprecated. If you like its style, use [biture](https://github.com/kywk/hexo-theme-biture) #
 
-A single column, minimal style, [Bootstrap] based theme for [Hexo].
-Also the default theme for [Hexi].
+## hexo-theme-bitrap
 
-## Install
+A single column, widget-less minimalist theme for [Hexo], based on [Bootstrap] css framework.
 
-Execute the following command and modify `theme` in `_config.yml` to `bitrap`.
+Preview: [live demo](http://kywk.github.io/hexo-theme-bitrap) / [kywk.life](http://kywk.github.io/)
 
+
+### Installation
+
+#### Install
+
+``` bash
+$ git clone https://github.com/kywk/hexo-theme-bitrap.git themes/bitrap
 ```
-git clone git://github.com/kywk/hexo-theme-bitrap.git themes/bitrap
-```
 
-## Update
+#### Enable
 
-Execute the following command to update bitrap.
+Modify `theme` setting in `_config.yml` to `bitrap`.
 
-```
+#### Update
+
+``` bash
 cd themes/bitrap
 git pull
 ```
 
-## Config
 
-Default config:
+### Configuration
 
-``` yaml
+``` yml
+# Header
 menu:
-  Home: /
-  Archives: /archives
-  Submenu:
-    item1:  //submenu.item1.url
-    item2:  //submenu.item2.url
+  home: /
+  archive: /archive
+  submenu:
+    google: //google.com/
+    yahoo:  //yahoo.com/
 
 extmenu:
-  Archives: /archives
-  Submenu:
-    item1:  //submenu.item1.url
-    item2:  //submenu.item2.url
+  github: //github.com/
+  hexo: //zespia.tw/hexo/
+  theme:
+    Pithiness:  //github.com/okoala/hexo-theme-pithiness
+    Phase:  //github.com/tommy351/hexo-theme-phase
+    Collect:  //github.com/beforeload/hexo-theme-collect
 
+rss:
+
+# Content
 excerpt_link: Read More
-
-addthis:
-  enable: true
-  pubid:
-  facebook: true
-  twitter: true
-  google: true
-  pinterest: true
 
 fancybox: true
 
+# Miscellaneous
 google_analytics:
-rss:
+favicon: /favicon.png
 ```
-
-- **menu** - Main navigation menu
-  - **submenu** - Dropdown menu
-- **extmenu** - Extended navigation menu, also support submenu
-- **excerpt_link** - "Read More" link text at the bottom of excerpted articles
-- **twitter** - Twitter widget config
-  - **username** - Twitter username
-  - **show_replies** - Enable displaying replies
-  - **tweet_count** - Tweets display in widget
-- **addthis** - Share buttons at the buttom of articles (Powered by [AddThis])
-  - **enable** - Enable share buttons
-  - **pubid** - Profile ID of [AddThis]
-  - **facebook** - Enable Facebook button
-  - **twitter** - Enable Twitter button
-  - **google** - Enable Google+ button
-  - **pinterest** - Enable Pinterest button
-- **fancybox** - Enable [Fancybox]
-- **google_analytics** - Google Analytics ID
+- **menu** - Main navigation menu, dropdown menu supported.
+- **extment** - Extend menu at the right hand side, dropdown menu supported too.
 - **rss** - RSS subscription link (change if using Feedburner)
+- **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
+- **fancybox** - KEEP IT 'true'
+- **google_analytics** - Google Analytics ID
 
-## Features
-
-
-### Fancybox
-
-![](http://i.minus.com/iHv7h7rZNqHvo.PNG)
 
 [Hexo]: http://zespia.tw/hexo/
-[Hexi]: https://github.com/kywk/hexi/
-[Bootstrap]: http://twitter.github.io/bootstrap/
-[AddThis]: https://www.addthis.com
-[Fancybox]: http://fancyapps.com/
+[Bootstrap]: http://getbootstrap.com/
